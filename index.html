@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#081421">
+<meta name="description" content="Animasi penjelasan 86 detik tentang BIO-PAS Bertingkat, sistem pengolahan air asam tambang berbasis TKKS. Berjalan tanpa internet.">
+<title>BIO-PAS Bertingkat — Animasi Sistem</title>
+<style>
+:root{color-scheme:dark;--bg:#081421;--panel:#0d1c2b;--ink:#edf4f5;--muted:#a0b4c5;--line:#243749;--teal:#61e4c0;--amber:#f1c76b;--orange:#ff9164;--red:#f17b85;--purple:#bca3f9;--accent:var(--teal)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--teal);outline-offset:5px}button{color:inherit}a{color:var(--teal)}.page{max-width:1620px;margin:auto;padding:24px 36px 18px}.masthead{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:22px}.brand{display:flex;align-items:center;gap:13px}.brand-mark{width:40px;height:44px;flex:none}.brand-name{font-size:17px;font-weight:650;letter-spacing:.015em}.brand-sub{color:var(--muted);font-size:11px;letter-spacing:.17em;text-transform:uppercase;margin-top:2px}.header-tools{display:flex;align-items:center;gap:16px}.duration{font:12px ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--muted);letter-spacing:.08em}.button{border:1px solid #3a5063;background:#142739;border-radius:9px;min-height:42px;padding:9px 15px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:13px;font-weight:550;transition:background .2s,border-color .2s}.button:hover{background:#213b4f;border-color:#638598}.button svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.film{position:relative;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#0b1927;box-shadow:0 24px 80px #0003}.stage{display:grid;grid-template-columns:minmax(0,1fr) minmax(310px,32%);height:clamp(560px,64vh,680px);position:relative}.viewport{position:relative;min-width:0;overflow:hidden;background:radial-gradient(ellipse at 55% 45%,#132d3b 0%,#0a1928 69%)}canvas{display:block;width:100%;height:100%}.view-label{position:absolute;top:26px;left:28px;font:11px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.12em;color:#95aebf;pointer-events:none}.view-label:before{content:"";width:6px;height:6px;display:inline-block;border-radius:50%;background:var(--accent);margin-right:8px;box-shadow:0 0 15px var(--accent)}.legend{display:flex;gap:14px;position:absolute;left:28px;bottom:24px;font-size:11px;color:#a5bbca;pointer-events:none;flex-wrap:wrap}.legend span{display:inline-flex;align-items:center;gap:6px}.legend i{width:6px;height:6px;border-radius:50%;background:var(--c);display:inline-block}.story{border-left:1px solid var(--line);padding:35px 30px 27px;display:flex;flex-direction:column;justify-content:center;position:relative;background:linear-gradient(135deg,#102335,#0c1a28)}.story-content{will-change:opacity,transform}.kicker{font:11px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.16em;color:var(--accent);margin-bottom:18px;text-transform:uppercase}.story h2{font-size:clamp(26px,2.25vw,36px);line-height:1.14;letter-spacing:-.03em;font-weight:620;margin:0 0 17px}.caption{font-size:15px;line-height:1.62;color:#b7c9d6;margin:0;min-height:98px}.facts{margin-top:24px}.small-label{font:10px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.12em;color:#9eb7c8;text-transform:uppercase}.metric{font-size:48px;line-height:1.12;letter-spacing:-.045em;color:var(--accent);font-weight:550;margin:6px 0 10px}.metric small{font-size:18px;letter-spacing:0;font-weight:400;color:var(--muted)}.tags{display:flex;flex-wrap:wrap;gap:7px}.tag{border:1px solid #32495a;border-radius:6px;padding:5px 9px;color:#d3e1e9;font-size:12px;background:#172c3c}.tag.emphasis{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 35%,transparent);background:color-mix(in srgb,var(--accent) 6%,transparent)}.flow-list{display:grid;gap:11px;font-size:13px;color:#c1d1da}.flow-item{display:flex;gap:12px;align-items:center}.step-num{font:11px ui-monospace,Consolas,monospace;color:var(--accent);width:19px}.divider{height:1px;background:var(--line);margin:16px 0}.composition{height:8px;display:flex;overflow:hidden;border-radius:4px;margin:11px 0 15px}.composition i:nth-child(1){width:70%;background:#c1a16d}.composition i:nth-child(2){width:20%;background:#7f9777}.composition i:nth-child(3){width:10%;background:#7794a8}.mix-row{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#bacbd6;margin:7px 0}.mix-row strong{font-weight:550;color:#eef4ed}.reaction{font-size:22px;letter-spacing:.02em;margin-top:15px;color:var(--purple)}.reaction small{font-size:11px;color:var(--muted);letter-spacing:0}.condition{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}.condition>div{padding:13px 0;border-top:1px solid #334a5c}.condition strong{font-size:22px;font-weight:500;display:block;color:var(--accent);margin-top:3px}.branch{display:flex;gap:11px;align-items:center;padding:11px 0}.branch+.branch{border-top:1px solid var(--line)}.branch-symbol{font-size:19px;width:23px}.branch strong{display:block;font-size:14px;font-weight:550}.branch span{display:block;font-size:12px;color:var(--muted)}.quality{display:grid;grid-template-columns:1fr 1fr;gap:20px 16px}.quality .big{grid-column:1/-1;border-bottom:1px solid var(--line);padding-bottom:12px}.quality strong{font-size:30px;line-height:1.25;display:block;font-weight:500;color:var(--teal)}.quality .big strong{font-size:48px;letter-spacing:-.04em}.quality small{font-size:12px;color:var(--muted)}.reference{font-size:11px;color:#91aabb;margin-top:16px;line-height:1.6}.opener{position:absolute;inset:0;z-index:4;pointer-events:none;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;background:radial-gradient(ellipse at 50% 45%,#0e2839ee,#091622f7 70%);will-change:opacity}.opener-inner{max-width:900px;will-change:transform,opacity}.opener .eyebrow{font:12px ui-monospace,Consolas,monospace;letter-spacing:.23em;text-transform:uppercase;color:var(--teal);margin-bottom:20px}.opener h1{font-size:clamp(44px,6.5vw,86px);font-weight:600;letter-spacing:-.055em;line-height:1.04;margin:0}.opener h1 span{display:block;color:var(--teal)}.opener p{font-size:clamp(14px,1.6vw,20px);color:#b9d0dd;margin:24px auto 0;max-width:650px}.opener .intro-rule{width:60px;height:2px;background:var(--teal);margin:26px auto}.opener .intro-note{font-size:12px;color:#8ea9bc;letter-spacing:.04em}.player{padding:18px 26px 19px;background:#0b1724;border-top:1px solid var(--line)}.player-top{display:flex;align-items:center;gap:15px;margin-bottom:13px}.play{width:40px;height:36px;border:1px solid #395163;border-radius:8px;background:#182f40;display:grid;place-items:center;flex:none}.play:hover{background:#264458}.play svg{width:17px;height:17px;fill:#e4f0f6}.track-wrap{position:relative;flex:1;display:flex;align-items:center;min-width:0}.track-wrap:before{content:"";position:absolute;left:0;right:0;height:3px;border-radius:2px;background:#263c4d}.progress-fill{position:absolute;left:0;height:3px;width:0%;background:var(--teal);border-radius:2px;pointer-events:none}input[type=range]{appearance:none;-webkit-appearance:none;background:transparent;position:relative;width:100%;height:24px;margin:0;cursor:pointer;accent-color:var(--teal)}input[type=range]::-webkit-slider-runnable-track{height:3px;background:transparent}input[type=range]::-moz-range-track{height:3px;background:transparent}input[type=range]::-webkit-slider-thumb{appearance:none;-webkit-appearance:none;width:11px;height:11px;background:#d3fff1;border-radius:50%;margin-top:-4px;border:0;box-shadow:0 0 0 5px #61e4c016}input[type=range]::-moz-range-thumb{width:11px;height:11px;background:#d3fff1;border:0;border-radius:50%}.time{font:12px ui-monospace,SFMono-Regular,Consolas,monospace;color:#b1c7d6;white-space:nowrap;font-variant-numeric:tabular-nums}.time .total{color:#627c90}.chapters{display:flex;gap:5px;margin-left:55px;margin-right:102px}.chapter{min-width:0;flex:1;border:0;border-top:2px solid #263d4e;padding:9px 0 1px;text-align:left;background:none;color:#7e9aaf;font-size:10px;white-space:nowrap;transition:color .3s,border-color .3s}.chapter.active{color:var(--teal);border-color:var(--teal)}.chapter.past{color:#afc4d2;border-color:#47756f}.chapter:hover{color:#e4f0f6}.page-footer{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:16px;color:#7895aa;font-size:11px}.footer-right{display:flex;align-items:center;gap:20px}.loop-label{display:flex;align-items:center;gap:7px;cursor:pointer;color:#a7becc}.loop-label input{accent-color:var(--teal);width:14px;height:14px;margin:0}.text-button{border:0;background:none;padding:4px 0;color:#afc6d5;font-size:11px}.text-button:hover{color:#e6fbf4}.sr-only{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}.note-dialog{width:min(650px,calc(100vw - 28px));max-height:85vh;background:#0f2233;border:1px solid #38556b;border-radius:16px;color:#d8e5ed;padding:27px 30px;box-shadow:0 30px 100px #0008}.note-dialog::backdrop{background:#020a13ce;backdrop-filter:blur(5px)}.dialog-header{display:flex;align-items:center;justify-content:space-between;gap:20px}.note-dialog h2{margin:0;font-size:23px}.note-dialog h3{font-size:15px;margin:25px 0 7px;color:var(--teal)}.note-dialog p,.note-dialog li{font-size:13px;line-height:1.65;color:#b7cbd9}.note-dialog ul{padding-left:20px}.note-dialog .source{font-size:11px;color:#8ca9be}.note-dialog .note{border-top:1px solid var(--line);padding-top:12px}.note-dialog .close{padding:5px 10px;min-height:34px}.noscript{padding:20px;background:#492d29;color:#fff}.film:fullscreen{width:100vw;height:100vh;border:0;border-radius:0;display:flex;flex-direction:column}.film:fullscreen .stage{flex:1;height:auto}.film:fullscreen .player{flex:none}
+@media(min-width:1500px){.story{padding:44px}.caption{font-size:16px}}
+@media(max-width:1000px){.page{padding:20px}.stage{grid-template-columns:minmax(0,1fr) 300px}.story{padding:28px 22px}.story h2{font-size:27px}.caption{font-size:14px}.facts{margin-top:19px}.legend{gap:10px}.chapters{margin-right:0}}
+@media(max-width:720px){.page{padding:16px 12px 20px}.masthead{margin-bottom:15px;gap:10px}.brand{gap:8px}.brand-mark{width:31px;height:36px}.brand-name{font-size:14px}.brand-sub{font-size:9px;letter-spacing:.09em}.duration{display:none}.button{padding:8px 10px;min-height:38px;font-size:11px}.header-tools{gap:8px}.film{border-radius:16px}.stage{display:flex;flex-direction:column;height:auto}.viewport{height:clamp(290px,46vh,410px);flex:none}.story{border-left:0;border-top:1px solid var(--line);padding:23px 24px 24px;min-height:360px;justify-content:flex-start}.story h2{font-size:28px;margin-bottom:12px;max-width:480px}.kicker{font-size:10px;margin-bottom:12px}.caption{font-size:14px;min-height:68px}.facts{margin-top:17px}.metric{font-size:41px}.composition{margin:8px 0 10px}.mix-row{margin:5px 0}.reaction{margin-top:10px}.view-label{top:18px;left:18px;font-size:9px}.legend{left:18px;bottom:16px;font-size:9px;gap:13px}.opener{padding:24px;background:radial-gradient(ellipse at 50% 37%,#0e2839f5,#091622fc 70%)}.opener-inner{transform:translateY(-30px)}.opener h1{font-size:52px}.opener .eyebrow{font-size:10px;letter-spacing:.14em}.opener p{font-size:15px;line-height:1.7}.opener .intro-note{font-size:10px}.player{padding:14px 16px}.player-top{gap:11px;margin-bottom:9px}.play{width:33px;height:33px}.time{font-size:10px}.chapters{margin:0;gap:6px}.chapter{font-size:9px;padding-top:7px}.page-footer{align-items:flex-start;line-height:1.7;font-size:10px;gap:12px}.footer-right{gap:14px;flex-wrap:wrap;justify-content:flex-end}.text-button{font-size:10px}.quality{grid-template-columns:1.2fr 1fr 1fr;gap:12px}.quality .big{grid-column:auto;border-bottom:0;border-right:1px solid var(--line);padding:0 8px 0 0}.quality .big strong{font-size:39px}.quality strong{font-size:26px}.quality small{font-size:10px}.reference{font-size:10px;margin-top:11px}.flow-list{gap:8px}.condition{margin-bottom:12px}.branch{padding:8px 0}.film:fullscreen{overflow:auto}.film:fullscreen .stage{flex:none}.film:fullscreen .viewport{height:46vh}}
+@media(max-width:370px){.brand-name{font-size:12px}.brand-sub{font-size:8px}.brand-mark{width:27px}.button{font-size:10px}.story{padding:21px;min-height:382px}.chapter{font-size:8px}.opener h1{font-size:45px}}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="masthead">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 44" aria-hidden="true"><path d="M20 2 36 11v21L20 41 4 32V11Z" fill="#112d39" stroke="#4e9d94" stroke-width="1.2"/><path d="M20 10c-3 6-9 10-9 16a9 9 0 0 0 18 0c0-6-6-10-9-16Z" fill="none" stroke="#74e4c5" stroke-width="1.7"/><path d="M14 28c3 2 9 2 12-1" fill="none" stroke="#74e4c5" stroke-width="1.5"/></svg>
+      <div><div class="brand-name">BIO-PAS Bertingkat</div><div class="brand-sub">Sistem pasif · berbasis TKKS</div></div>
+    </div>
+    <div class="header-tools"><span class="duration">ANIMASI / 86 DETIK</span><button class="button" id="replay" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9a8 8 0 1 1 0 7M4 3v6h6"/></svg>Putar Ulang</button></div>
+  </header>
+  <main class="film" id="film" aria-label="Animasi penjelasan BIO-PAS Bertingkat">
+    <div class="stage">
+      <div class="viewport" id="viewport">
+        <canvas id="world" role="img" aria-label="Animasi isometrik: air asam tambang mengalir turun ke bioreaktor anaerob, kolam aerob, dan saluran air bersih. Media jenuh bercabang ke uji TCLP dan pengelolaan residu.">Peramban Anda perlu mendukung Canvas untuk menampilkan animasi.</canvas>
+        <div class="view-label" id="viewLabel">ALIRAN GRAVITASI</div>
+        <div class="legend"><span><i style="--c:#ff9164"></i>Asam / logam tinggi</span><span><i style="--c:#f1c76b"></i>Transisi</span><span><i style="--c:#61e4c0"></i>Air bersih</span></div>
+      </div>
+      <aside class="story" aria-label="Penjelasan adegan"><div class="story-content" id="storyContent"><div class="kicker" id="kicker"></div><h2 id="sceneTitle"></h2><p class="caption" id="caption"></p><div class="facts" id="facts"></div></div></aside>
+      <div class="opener" id="opener"><div class="opener-inner" id="openerInner"><div class="eyebrow">Dari limbah sawit, untuk pemulihan tambang</div><h1>BIO-PAS<span>Bertingkat</span></h1><p>Bioreaktor Pasif Anaerob–Aerob<br>berbasis Tandan Kosong Kelapa Sawit (TKKS)</p><div class="intro-rule"></div><div class="intro-note">SATU SISTEM · TIGA TAHAP · MENGALIR DENGAN GRAVITASI</div></div></div>
+    </div>
+    <div class="player">
+      <div class="player-top"><button class="play" id="play" type="button" aria-label="Jeda animasi" title="Jeda / putar (Spasi)"><svg id="playIcon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h4v16H6zm8 0h4v16h-4z"/></svg></button><div class="track-wrap"><div class="progress-fill" id="progressFill"></div><input id="seek" type="range" min="0" max="86" step="0.1" value="0" aria-label="Posisi pemutaran animasi" aria-valuetext="0 dari 86 detik"></div><div class="time"><span id="timeNow">00:00</span><span class="total"> / 01:26</span></div></div>
+      <nav class="chapters" id="chapters" aria-label="Lompat ke adegan"></nav>
+    </div>
+  </main>
+  <footer class="page-footer"><span>Visualisasi konsep · alur proses dipercepat</span><div class="footer-right"><label class="loop-label"><input type="checkbox" id="loop" checked>Ulang otomatis</label><button class="text-button" type="button" id="notesButton">Data sistem</button><button class="text-button" type="button" id="fullscreen">Layar penuh</button></div></footer>
+</div>
+<dialog id="notes" class="note-dialog" aria-labelledby="notesTitle"><div class="dialog-header"><h2 id="notesTitle">Data sistem BIO-PAS</h2><button class="button close" id="closeNotes" type="button">Tutup</button></div>
+  <p>Animasi 86 detik ini mengikuti konteks rancangan BIO-PAS Bertingkat dan esai yang disertakan. Angka berikut adalah data rancangan dan target keluaran, bukan hasil pengukuran animasi.</p>
+  <h3>Input — Air Asam Tambang (AAT)</h3><p>pH 2,0–3,5, kaya sulfat, dengan Fe, Zn, Al, Cu, dan Mn terlarut.</p>
+  <h3>Tahap 1 — Bioreaktor anaerob berbasis TKKS</h3><p>Vertical-flow dengan aliran turun. Lapisan atas berupa kolom distribusi/perkolasi untuk meratakan aliran. Zona reaktif berisi 70% cacahan TKKS mentah, 20% kotoran sapi, dan 10% lumpur endapan alami. Lapisan dasar berupa drainase batugamping (limestone) untuk mencegah penyumbatan.</p><p>Menurut skema yang diberikan, Sulfate-Reducing Bacteria (SRB) mereduksi sulfat (SO₄²⁻) menjadi H₂S yang mengikat Fe, Zn, Al, Cu menjadi mineral sulfida padat, sekaligus menaikkan pH. Keluaran tahap ini memiliki pH netral, tetapi Mn masih terlarut.</p>
+  <h3>Tahap 2 — Kolam lahan basah aerob</h3><p>Kolam dangkal terbuka memperoleh aerasi alami dari atmosfer. Bakteri pengoksidasi mangan mengendapkan Mn menjadi Mangan Oksida (MnO₂). Proses berlangsung pada kondisi aerob dan pH netral, berlawanan dengan kondisi anaerob Tahap 1.</p>
+  <h3>Tahap 3 — Uji TCLP dan pengelolaan residu</h3><p>Media organik jenuh diuji dengan Toxicity Characteristic Leaching Procedure (TCLP). Jika lolos baku mutu, media dihamparkan sebagai topsoil untuk revegetasi. Jika gagal, media diarahkan ke pengolahan limbah B3 atau distabilisasi kapur. Ini adalah jalur pengelolaan residu; air terolah keluar dari kolam aerob melalui jalur air.</p>
+  <h3>Output — Target air bersih keluaran gravitasi</h3><p>pH 6–9; Fe di bawah ambang batas maksimum 7 mg/L dan Mn di bawah ambang batas maksimum 4 mg/L, sesuai parameter yang diminta dari Kepmen LH 113/2003.</p>
+  <h3>Makna visual</h3><p>Merah/oranye: AAT dengan pH rendah dan logam tinggi. Kuning: transisi. Hijau/teal: air bersih sesuai target. Titik bergerak mewakili partikel; bentuk bersudut mewakili padatan. Jalur putus-putus menunjukkan pemindahan media jenuh. Kecepatan, skala, jumlah partikel, dan gelembung bersifat ilustratif.</p>
+  <p class="source">Bahan: Essay_BIO-PAS_Bertingkat_Expanded.doc dan konteks sistem yang diberikan pengguna. Data pada pesan pengguna diutamakan apabila berbeda dengan ringkasan esai.</p>
+  <p class="source note">Catatan kimia: pengikatan logam ditampilkan mengikuti penyederhanaan rancangan. Aluminium di dalam air umumnya dipisahkan sebagai hidroksida; Al tidak membentuk endapan sulfida stabil seperti Fe, Zn, dan Cu. Kenaikan pH berkaitan dengan pembentukan alkalinitas selama reduksi sulfat, bukan reaksi pengendapan sulfida itu sendiri.</p>
+  <p class="source">Kontrol: Spasi untuk jeda/putar, panah kiri/kanan untuk mundur/maju 5 detik, atau pilih bab pada garis waktu. Seluruh gambar, gaya, dan animasi tersimpan dalam satu berkas; tidak memerlukan internet.</p>
+</dialog>
+<noscript><div class="noscript">Aktifkan JavaScript di peramban untuk memutar animasi BIO-PAS Bertingkat.</div></noscript>
+<script>
+'use strict';
+(() => {
+const $ = id => document.getElementById(id);
+const canvas=$('world'), ctx=canvas.getContext('2d'), viewport=$('viewport');
+const DURATION=86;
+const C={ink:'#e1edf3',muted:'#91acbe',line:'#335066',teal:'#61e4c0',amber:'#f1c76b',orange:'#ff9164',red:'#f17b85',purple:'#bca3f9'};
+const scenes=[
+  {start:0,end:5,nav:'Pembuka',label:'BIO-PAS BERTINGKAT',title:'Limbah sawit untuk memulihkan air tambang.',color:C.teal,view:'BIOREAKTOR PASIF ANAEROB–AEROB',camera:[670,352,1450,760],facts:''},
+  {start:5,end:12,nav:'Alur',label:'PETA SISTEM',title:'Tiga tahap yang saling melengkapi.',color:C.teal,view:'TINJAUAN SISTEM · ALIRAN GRAVITASI',camera:[690,390,1500,835],facts:'<div class="flow-list"><div class="flow-item"><span class="step-num">01</span>Reaktor anaerob · menaikkan pH</div><div class="flow-item"><span class="step-num">02</span>Kolam aerob · mengendapkan Mn</div><div class="flow-item"><span class="step-num">03</span>Uji TCLP · menentukan arah residu</div></div><div class="divider"></div><div class="tags"><span class="tag emphasis">Air mengalir karena gravitasi</span></div>'},
+  {start:12,end:24,nav:'Input',label:'INPUT / AIR ASAM TAMBANG',title:'Air yang asam membawa logam terlarut.',color:C.orange,view:'INPUT · AAT',camera:[143,206,440,340],facts:'<div class="small-label">pH air masuk</div><div class="metric">2,0–3,5</div><div class="small-label" style="margin-bottom:10px">Kaya sulfat · logam terlarut</div><div class="tags"><span class="tag">Fe</span><span class="tag">Zn</span><span class="tag">Al</span><span class="tag">Cu</span><span class="tag" style="color:#ff9164">Mn</span></div>'},
+  {start:24,end:39,nav:'Anaerob',label:'TAHAP 01 / REAKTOR ANAEROB',title:'Tiga lapisan. Aliran vertikal ke bawah.',color:C.amber,view:'POTONGAN REAKTOR · VERTICAL-FLOW',camera:[468,236,505,470],facts:'<div class="small-label">Komposisi zona reaktif</div><div class="composition" aria-label="70 persen TKKS, 20 persen kotoran sapi, 10 persen lumpur endapan"><i></i><i></i><i></i></div><div class="mix-row"><span>Cacahan TKKS mentah</span><strong>70%</strong></div><div class="mix-row"><span>Kotoran sapi</span><strong>20%</strong></div><div class="mix-row"><span>Lumpur endapan alami</span><strong>10%</strong></div><div class="reaction">SO₄²⁻ <small>— SRB →</small> H₂S</div><div class="reference">Sulfate-Reducing Bacteria · zona tanpa oksigen</div>'},
+  {start:39,end:53,nav:'Aerob',label:'TAHAP 02 / AEROBIC POLISHING',title:'Mangan membutuhkan kondisi yang berbeda.',color:C.teal,view:'KOLAM DANGKAL TERBUKA · AEROB',camera:[875,348,555,365],facts:'<div class="condition"><div><span class="small-label">Lingkungan</span><strong>Aerob</strong></div><div><span class="small-label">pH masuk</span><strong>Netral</strong></div></div><div class="reaction" style="color:var(--teal)"><span style="color:#ff9164">Mn</span> → MnO₂ <small>↓ padatan</small></div><div class="reference">Bakteri pengoksidasi mangan<br>Oksigen diperoleh dari atmosfer</div>'},
+  {start:53,end:67,nav:'TCLP',label:'TAHAP 03 / PENGELOLAAN RESIDU',title:'Media jenuh diuji sebelum dimanfaatkan.',color:C.purple,view:'JALUR RESIDU · UJI TCLP',camera:[831,609,960,425],facts:'<div class="small-label">Toxicity Characteristic Leaching Procedure</div><div class="branch"><div class="branch-symbol" style="color:#61e4c0">✓</div><div><strong style="color:#61e4c0">Lolos → Topsoil</strong><span>Dihamparkan untuk revegetasi</span></div></div><div class="branch"><div class="branch-symbol" style="color:#f17b85">×</div><div><strong style="color:#f17b85">Gagal → Limbah B3</strong><span>Pengolahan B3 / stabilisasi kapur</span></div></div>'},
+  {start:67,end:76,nav:'Output',label:'OUTPUT / TARGET KUALITAS AIR',title:'Air bersih keluar secara gravitasi.',color:C.teal,view:'KELUARAN · TARGET BAKU MUTU',camera:[1224,440,435,295],facts:'<div class="quality"><div class="big"><div class="small-label">pH keluaran</div><strong>6–9</strong></div><div><span class="small-label">Fe · batas maks.</span><strong>7 <small>mg/L</small></strong></div><div><span class="small-label">Mn · batas maks.</span><strong>4 <small>mg/L</small></strong></div></div><div class="reference">Target Fe dan Mn di bawah ambang batas<br>Kepmen LH 113/2003</div>'},
+  {start:76,end:86,nav:'Sirkular',label:'EKONOMI SIRKULAR',title:'TKKS sawit menjadi bagian dari pemulihan tambang.',color:C.teal,view:'BIO-PAS BERTINGKAT · SIKLUS PEMANFAATAN',camera:[690,390,1500,835],facts:'<div class="flow-list"><div class="flow-item"><span class="step-num">↗</span>TKKS → media reaktif</div><div class="flow-item"><span class="step-num">↗</span>AAT → air terolah</div><div class="flow-item"><span class="step-num">↗</span>Residu lolos TCLP → revegetasi</div></div><div class="divider"></div><div class="tags"><span class="tag emphasis">Limbah menjadi sumber daya</span></div>'}
+];
+const captions=[
+ [0,'Bioreaktor Pasif Anaerob–Aerob berbasis Tandan Kosong Kelapa Sawit.'],
+ [5,'Air mengalir melalui reaktor anaerob lalu kolam aerob. Media organik jenuh dipisahkan menuju uji TCLP dan pengelolaan residu.'],
+ [12,'Air Asam Tambang (AAT) masuk pada pH 2,0–3,5. Warna merah-oranye menandai air yang asam dengan logam tinggi.'],
+ [17.5,'AAT kaya sulfat dan mengandung Fe, Zn, Al, Cu, serta Mn terlarut. Aliran gravitasi membawanya menuju reaktor pertama.'],
+ [24,'Kolom distribusi/perkolasi meratakan air di atas matriks reaktif. Di dasar reaktor, drainase batugamping mencegah penyumbatan.'],
+ [29,'SRB mereduksi sulfat menjadi H₂S. Dalam skema ini, H₂S mengikat Fe, Zn, Al, Cu menjadi mineral sulfida padat, sementara pH naik.'],
+ [35,'Air turun melewati drainase batugamping. Keluaran Tahap 1 sudah berpH netral, tetapi mangan (Mn) masih terlarut.'],
+ [39,'Air memasuki kolam dangkal terbuka. Aerasi alami dari atmosfer membentuk kondisi aerob—kebalikan dari reaktor pertama.'],
+ [45,'Pada kondisi aerob dan pH netral, bakteri pengoksidasi mangan mengubah Mn menjadi padatan MnO₂. Partikel turun dan mengendap di dasar kolam.'],
+ [53,'Media organik yang sudah jenuh dipindahkan ke uji TCLP. Hasil uji menentukan tujuan pengelolaan residu.'],
+ [57,'Jika LOLOS baku mutu, media dihamparkan sebagai topsoil untuk revegetasi. Jalur hijau menunjukkan pemanfaatan kembali yang bersyarat.'],
+ [62,'Jika GAGAL, residu diarahkan ke pengolahan limbah B3 atau distabilisasi kapur. Kedua jalur dipilih berdasarkan hasil uji TCLP.'],
+ [67,'Air bersih mengalir keluar dengan target pH 6–9. Fe dan Mn ditargetkan berada di bawah ambang batas yang tercantum.'],
+ [76,'TKKS sawit dimanfaatkan untuk membantu menyelesaikan limbah tambang. Pemulihan air dan pengelolaan residu membentuk satu rangkaian ekonomi sirkular.']
+];
+let elapsed=0,playing=true,lastTick=0,activeScene=-1,activeCaption=-1,W=0,H=0,DPR=1,notesWasPlaying=false,renderFrame=0;
+const clamp=(v,a=0,b=1)=>Math.min(b,Math.max(a,v));
+const lerp=(a,b,t)=>a+(b-a)*t;
+const smooth=t=>(t=clamp(t))*t*(3-2*t);
+const ease=t=>(t=clamp(t))<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
+const fract=x=>x-Math.floor(x);
+const rand=n=>fract(Math.sin(n*127.1+311.7)*43758.5453);
+const rgba=(hex,a)=>{const n=parseInt(hex.slice(1),16);return `rgba(${n>>16},${(n>>8)&255},${n&255},${a})`};
+const colorMix=(a,b,t)=>{const n=parseInt(a.slice(1),16),m=parseInt(b.slice(1),16);return `rgb(${Math.round(lerp(n>>16,m>>16,t))},${Math.round(lerp((n>>8)&255,(m>>8)&255,t))},${Math.round(lerp(n&255,m&255,t))})`};
+function sceneAt(t){let i=scenes.length-1;while(i>0&&t<scenes[i].start)i--;return i}
+function captionAt(t){let i=captions.length-1;while(i>0&&t<captions[i][0])i--;return i}
+function timeText(t){const n=Math.floor(t);return `${String(Math.floor(n/60)).padStart(2,'0')}:${String(n%60).padStart(2,'0')}`}
+const chapterButtons=scenes.map((s,i)=>{const b=document.createElement('button');b.type='button';b.className='chapter';b.textContent=s.nav;b.title=`${s.nav} · ${timeText(s.start)}`;b.setAttribute('aria-label',`Putar adegan ${s.nav}, mulai ${s.start} detik`);b.addEventListener('click',()=>{seek(s.start+.05);play()});$('chapters').append(b);return b});
+function resize(){const r=viewport.getBoundingClientRect();W=r.width;H=r.height;DPR=Math.min(window.devicePixelRatio||1,2);canvas.width=Math.round(W*DPR);canvas.height=Math.round(H*DPR);draw(elapsed)}
+function setUI(t,idx){const s=scenes[idx];if(idx!==activeScene){activeScene=idx;$('kicker').textContent=s.label;$('sceneTitle').textContent=s.title;$('facts').innerHTML=s.facts;$('viewLabel').textContent=s.view;document.documentElement.style.setProperty('--accent',s.color);chapterButtons.forEach((b,i)=>{b.classList.toggle('active',i===idx);b.classList.toggle('past',i<idx);if(i===idx)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current')})}const ci=captionAt(t);if(ci!==activeCaption){activeCaption=ci;$('caption').textContent=captions[ci][1]}
+  const transitionIn=smooth((t-s.start)/.72),transitionOut=idx===7?1:1-smooth((t-(s.end-.3))/.3);const endFade=t>85&&t<86&&playing&&$('loop').checked?1-smooth(t-85):1;const op=idx===0?0:Math.min(transitionIn,transitionOut)*endFade;$('storyContent').style.opacity=op;$('storyContent').style.transform=`translateY(${(1-transitionIn)*11}px)`;
+  const captionFade=smooth((t-captions[ci][0])/.35);$('caption').style.opacity=idx===0?1:Math.max(.15,captionFade);
+  const introOpacity=1-smooth((t-4.15)/.85);$('opener').style.opacity=introOpacity;$('opener').style.visibility=t>=5?'hidden':'visible';$('openerInner').style.opacity=smooth((t-.15)/1.25);$('openerInner').style.transform=`translateY(${(1-smooth(t/1.8))*18}px)`;
+  $('seek').value=t;$('seek').setAttribute('aria-valuetext',`${Math.round(t)} dari 86 detik, ${s.nav}`);$('progressFill').style.width=`${t/DURATION*100}%`;$('timeNow').textContent=timeText(t);
+}
+function cameraFor(idx,t){
+  if(W<520&&idx===5){
+    const lab=[535,594,430,335],soil=[887,603,500,345],b3=[1140,663,520,320];
+    if(t<57)return lab;
+    if(t<62){const p=ease((t-57)/1.4);return soil.map((v,i)=>lerp(lab[i],v,p))}
+    const p=ease((t-62)/1.4);return b3.map((v,i)=>lerp(soil[i],v,p));
+  }
+  return scenes[idx].camera;
+}
+function cameraAt(t,idx){const next=cameraFor(idx,t);if(idx===0)return next;const prev=cameraFor(idx-1,scenes[idx].start-.01),p=ease((t-scenes[idx].start)/1.65);return next.map((v,i)=>lerp(prev[i],v,p))}
+function path(points,fill,stroke,width=1){ctx.beginPath();points.forEach((p,i)=>i?ctx.lineTo(...p):ctx.moveTo(...p));ctx.closePath();if(fill){ctx.fillStyle=fill;ctx.fill()}if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=width;ctx.stroke()}}
+function line(points,color,width=1,dash=[]){ctx.beginPath();points.forEach((p,i)=>i?ctx.lineTo(...p):ctx.moveTo(...p));ctx.strokeStyle=color;ctx.lineWidth=width;ctx.setLineDash(dash);ctx.stroke();ctx.setLineDash([])}
+function circle(x,y,r,fill,stroke,width=1){ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);if(fill){ctx.fillStyle=fill;ctx.fill()}if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=width;ctx.stroke()}}
+function text(str,x,y,size=16,color=C.ink,weight=400,align='left'){ctx.font=`${weight} ${size}px "Segoe UI",Arial,sans-serif`;ctx.textAlign=align;ctx.textBaseline='middle';ctx.fillStyle=color;ctx.fillText(str,x,y)}
+function rounded(x,y,w,h,r,fill,stroke){ctx.beginPath();ctx.roundRect(x,y,w,h,r);if(fill){ctx.fillStyle=fill;ctx.fill()}if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=1;ctx.stroke()}}
+function badge(str,x,y,color=C.teal,size=15){ctx.font=`500 ${size}px "Segoe UI",Arial,sans-serif`;const w=ctx.measureText(str).width+24;rounded(x-w/2,y-15,w,30,6,'#0c202e',rgba(color,.5));text(str,x,y,size,color,500,'center')}
+function iso(x,y,w,d,h,top,front,side,stroke='#466074'){const dx=d*.65,dy=d*.4;path([[x,y],[x+w,y],[x+w,y+h],[x,y+h]],front,stroke,1);path([[x+w,y],[x+w+dx,y-dy],[x+w+dx,y-dy+h],[x+w,y+h]],side,stroke,1);path([[x,y],[x+dx,y-dy],[x+w+dx,y-dy],[x+w,y]],top,stroke,1);return{dx,dy}}
+function platform(x,y,w,d){const dx=d*.65,dy=d*.4;ctx.save();ctx.shadowColor='#0006';ctx.shadowBlur=22;ctx.shadowOffsetY=13;iso(x,y,w,d,12,'#173042','#0f2131','#102637','#2c495a');ctx.restore();line([[x+8,y+2],[x+w-9,y+2]],'#325569',1)}
+function particle(x,y,r,color,solid=false,label=''){ctx.save();if(solid){path([[x-r,y-r*.6],[x+r*.6,y-r],[x+r,y+r*.4],[x-r*.5,y+r]],color,rgba('#ffffff',.22),.7)}else{ctx.shadowColor=rgba(color,.8);ctx.shadowBlur=8;circle(x,y,r,color);ctx.shadowBlur=0;circle(x-r*.25,y-r*.3,r*.25,rgba('#ffffff',.6))}if(label)text(label,x,y-r-9,12,color,500,'center');ctx.restore()}
+function samplePath(points,p){let lens=[],total=0;for(let i=1;i<points.length;i++){const d=Math.hypot(points[i][0]-points[i-1][0],points[i][1]-points[i-1][1]);lens.push(d);total+=d}let at=p*total;for(let i=0;i<lens.length;i++){if(at<=lens[i])return[lerp(points[i][0],points[i+1][0],at/lens[i]),lerp(points[i][1],points[i+1][1],at/lens[i])];at-=lens[i]}return points[points.length-1]}
+function flowingPath(points,color,t,speed=.14,count=8,dashed=false,progress=1){line(points,'#07121d',12);line(points,rgba(color,.22),5,dashed?[8,8]:[]);if(progress<1){const a=[];for(let i=0;i<=40*progress;i++)a.push(samplePath(points,i/40));if(a.length>1)line(a,color,2,dashed?[8,8]:[])}else line(points,rgba(color,.45),1.4,dashed?[8,8]:[]);for(let i=0;i<count;i++){const f=fract(t*speed+i/count);if(f>progress)continue;const[x,y]=samplePath(points,f);particle(x,y,dashed?3:3.4,color,dashed)}const a=samplePath(points,.95),b=samplePath(points,.98),ang=Math.atan2(b[1]-a[1],b[0]-a[0]);ctx.save();ctx.translate(...b);ctx.rotate(ang);path([[0,0],[-9,-4],[-9,4]],rgba(color,.7));ctx.restore()}
+function ground(){ctx.save();ctx.strokeStyle='#243e4c';ctx.globalAlpha=.18;ctx.lineWidth=.75;for(let x=-800;x<1800;x+=65)line([[x,-120],[x+1800,900]],'#355563',.8);for(let x=-700;x<2600;x+=65)line([[x,-120],[x-1450,900]],'#355563',.8);ctx.restore()}
+function grain(x,y,w,h,n,base=0){ctx.save();for(let i=0;i<n;i++){let px=x+rand(i+base)*w,py=y+rand(i+197+base)*h;line([[px,py],[px+3+rand(i+8)*14,py-3-rand(i+3)*5]],i%3===0?'#b0925c':'#7b714f',1+rand(i+7))}ctx.restore()}
+function stationLabel(name,x,y,color){text(name,x,y,21,color,600,'center')}
+function inputUnit(t){
+  platform(0,225,222,115);
+  path([[-9,116],[28,62],[61,83],[91,39],[143,112]],'#213343','#425360',1);
+  path([[72,108],[117,66],[157,84],[176,58],[210,107]],'#263a46','#425360',1);
+  line([[18,109],[37,81],[58,93]],'#52616b',2);line([[82,103],[116,76],[139,92]],'#52616b',2);
+  iso(17,134,175,108,71,'#754b3d','#3e3333','#2d2b32','#91614b');
+  const water=ctx.createLinearGradient(0,139,0,201);water.addColorStop(0,'#c26642');water.addColorStop(1,'#61362d');
+  path([[25,140],[188,140],[188,198],[25,198]],water);
+  path([[25,135],[86,98],[251,98],[188,135]],'#c5744a','#e39b66',1);
+  for(let i=0;i<5;i++){const x=43+i*33,y=125-i%2*12;ctx.beginPath();ctx.ellipse(x+Math.sin(t*.8+i)*4,y,15+Math.sin(t+i)*3,3.2,-.2,0,Math.PI*2);ctx.strokeStyle='#efb67b55';ctx.lineWidth=1;ctx.stroke()}
+  const metals=['Fe','Zn','Al','Cu','Mn'];for(let i=0;i<10;i++){const x=43+rand(i+100)*128+Math.sin(t*.65+i)*4,y=151+rand(i+75)*34+Math.cos(t*.6+i)*4;particle(x,y,3.4,i%5===4?C.orange:'#efb67b',false);if(i<5)text(metals[i],x+6,y+3,11,'#ffe1b4',500)}
+  line([[196,156],[226,138]],'#dc9563',8);circle(227,138,7,'#362b28','#ba7b59',2);
+  badge('pH 2,0–3,5',137,45,C.orange,17);
+  text('SO₄²⁻',114,169,24,'#f4cf9e',600,'center');
+  stationLabel('INPUT · AAT',128,270,C.orange);
+}
+function reactorUnit(t,idx){
+  const stage=idx===3,ex=stage?smooth((t-24.25)/1.05)*(1-smooth((t-27.3)/1.25)):0;
+  const yTop=150-63*ex,yMid=211-7*ex,yBase=358+34*ex;
+  platform(325,431,290,135);
+  if(ex>.01){ctx.save();ctx.globalAlpha=ex*.6;for(const x of[350,580,651])line([[x,99],[x,443]],'#a8c0d0',1,[4,5]);ctx.restore()}
+  iso(350,yBase,230,110,56,'#87969a','#526b76','#3e5767','#8dabb7');
+  for(let i=0;i<34;i++){const x=361+rand(i+57)*206,y=yBase+8+rand(i+34)*40,r=5+rand(i+90)*8;path([[x-r,y],[x-r*.4,y-r*.5],[x+r*.6,y-r*.3],[x+r,y+r*.45],[x-r*.3,y+r*.6]],i%2?'#81959c':'#a1aca7','#58717c',.8)}
+  iso(350,yMid,230,110,140,'#85794c','#544b35','#393d31','#9c956d');
+  grain(356,yMid+5,205,120,72,20);
+  for(let i=0;i<16;i++){const x=372+rand(i+250)*190,y=yMid-5-rand(i+37)*32;line([[x,y],[x+18,y-6]],'#bca272',2)}
+  rounded(357,yMid+117,212,20,3,'#243b35dd');text('ZONA REAKTIF · SRB',464,yMid+127,13,'#e6e1bb',500,'center');
+  const react=idx===3?smooth((t-28.4)/1.25):1;
+  for(let i=0;i<8;i++){
+    const p=fract((t-29)*.175+i*.133),x=375+(i%4)*51+Math.sin(i*2)*3;
+    const y=yMid+16+p*87,col=react<.2?C.orange:(p<.51?C.orange:C.purple);
+    particle(x,y,p<.51?4.5:5,col,p>=.51&&react>.2);
+    if(p<.6&&react>.01){const approach=smooth(p/.51),sx=x+(i%2?26:-26)*(1-approach),sy=y+15*(1-approach);ctx.save();ctx.globalAlpha=react;particle(sx,sy,3.5,C.purple);if(i%3===0&&p<.38)text('H₂S',sx,sy+13,10,C.purple,500,'center');ctx.restore()}
+    if(p>.47&&p<.63&&react>.2){circle(x,y,7+(p-.47)*55,null,rgba(C.purple,(1-(p-.47)/.16)*.8),1.5)}
+    if(i<4&&p<.35)text(['Fe','Zn','Cu','Al'][i],x,y-10,11,'#ffdfb3',500,'center');
+  }
+  for(let i=0;i<14;i++)particle(363+i*14.7,yMid+110+Math.sin(i)*2,2.7,'#aa99ce',true);
+  iso(350,yTop,230,110,52,'#355264','#254655','#1c3445','#789aaa');
+  path([[359,yTop-1],[420,yTop-38],[640,yTop-38],[579,yTop-1]],'#b18a544a','#cda97977',1);
+  const manifold=[[381,yTop-14],[591,yTop-14]];line(manifold,'#9fb1b1',6);for(let i=0;i<6;i++){const x=387+i*35;line([[x,yTop-14],[x,yTop+3]],'#899fa5',4);const p=fract(t*.7+i/6);particle(x,yTop+6+p*29,2.3,colorMix(C.orange,C.amber,p))}
+  text('DISTRIBUSI / PERKOLASI',465,yTop+35,13,'#d8e4e6',500,'center');
+  const ys=yTop+56,ye=yBase+38;for(let i=0;i<3;i++){const p=fract(t*.24+i/3);const x=594+(i%2)*10,y=lerp(ys,ye,p);particle(x,y,3,C.amber)}
+  text('BATUGAMPING',464,yBase+31,14,'#f0f5ee',600,'center');
+  for(let i=0;i<4;i++){const p=fract(t*.22+i*.25),y=lerp(yTop+56,yBase+50,p);particle(569,y,3.8,C.orange);if(i===0&&stage)text('Mn',553,y-8,12,C.orange,600,'center')}
+  line([[580,yBase+38],[643,yBase+1]],'#b5a36b',9);circle(644,yBase,5,C.amber);
+  if(stage){line([[325,yTop+12],[325,yBase+48]],'#d6bd7166',1.5,[3,5]);for(let i=0;i<3;i++){const p=fract(t*.27+i/3),y=lerp(yTop+14,yBase+39,p);path([[321,y-3],[329,y-3],[325,y+5]],C.amber)}
+    if(t>=35){badge('pH netral · Mn masih terlarut',501,470,C.amber,14)}else badge(ex>.2?'LAPISAN TERPISAH':'ANAEROB · TANPA O₂',494,72,C.amber,15);
+  }
+  if(!stage)stationLabel('01 · ANAEROB',493,472,C.amber);
+}
+function reed(x,y,size,t,n){const sway=Math.sin(t*.7+n)*size*.065;ctx.save();ctx.lineCap='round';line([[x,y],[x+sway,y-size]],'#84b691',1.8);ctx.beginPath();ctx.moveTo(x,y-size*.22);ctx.quadraticCurveTo(x-size*.32,y-size*.65,x-size*.27+sway,y-size*.81);ctx.strokeStyle='#62967f';ctx.lineWidth=3;ctx.stroke();ctx.beginPath();ctx.moveTo(x,y-size*.39);ctx.quadraticCurveTo(x+size*.27,y-size*.87,x+size*.3+sway,y-size*.66);ctx.stroke();line([[x+sway,y-size],[x+sway+1,y-size-8]],'#c8b38a',3);ctx.restore()}
+function wetlandUnit(t,idx){
+  platform(716,478,332,133);
+  const cool=idx===4?smooth((t-41)/5):1;
+  iso(740,385,280,120,77,'#1b766e','#1b504e','#153c44','#598c8b');
+  path([[748,385],[819,342],[1089,342],[1018,385]],colorMix('#71884f','#2c9e88',cool),'#6ed9b688',1.1);
+  path([[748,390],[1015,390],[1015,447],[748,447]],'#254a43');
+  path([[748,442],[1015,442],[1015,455],[748,455]],'#4c5348');
+  for(let i=0;i<40;i++)particle(756+rand(i+387)*250,446+rand(i+53)*8,1.5+rand(i+22)*2,'#777767',true);
+  for(let i=0;i<8;i++){const x=772+i*35,y=356+(i%3)*8;ctx.beginPath();ctx.ellipse(x+Math.sin(t*.65+i)*5,y,18+Math.sin(t+i)*4,3,0,0,Math.PI*2);ctx.strokeStyle='#a8f9d344';ctx.lineWidth=1;ctx.stroke()}
+  for(let i=0;i<9;i++){const x=823+i*29,y=338;reed(x,y,29+rand(i+88)*27,t,i)}
+  for(let i=0;i<3;i++)reed(750+i*15,381-i*8,25+i*6,t,i+33);
+  for(let i=0;i<7;i++){
+    const p=fract(t*.24+i/7),x=774+i*45+Math.sin(t*.8+i)*3,y=lerp(270,350,p);
+    const a=Math.sin(p*Math.PI)*.8;circle(x,y,4.5,null,rgba('#a8e9eb',a),1.3);if(i%3===0&&idx===4)text('O₂',x,y-12,12,rgba('#b2ebee',a),500,'center');
+  }
+  if(idx===4)badge('AERASI ALAMI DARI ATMOSFER',916,230,'#a8e9eb',14);
+  const oxide=idx===4?smooth((t-44)/1.7):1;
+  for(let i=0;i<11;i++){
+    const p=fract((t-45)*.145+i*.119),x=770+rand(i+815)*228;
+    const settled=p>.47&&oxide>.15,y=p<.47?397+Math.sin(p*10+i)*6:lerp(400,444,smooth((p-.47)/.45));
+    particle(x,y,settled?4:4.2,settled?'#bbb28c':C.orange,settled);
+    if(i===2||i===6)text(settled?'MnO₂':'Mn',x,y-12,11,settled?'#d8d2b8':C.orange,500,'center');
+    if(p>.45&&p<.57&&oxide>.15)circle(x,y,8,null,rgba(C.teal,(.57-p)/.12),1.4);
+  }
+  text('MnO₂ · ENDAPAN',889,463,13,'#d8ceb0',500,'center');
+  stationLabel('02 · KOLAM AEROB',919,513,C.teal);
+}
+function outputUnit(t,idx){
+  platform(1125,524,236,115);
+  iso(1150,443,178,94,54,'#237d72','#165e56','#163f46','#61baaa');
+  path([[1155,443],[1209,409],[1380,409],[1326,443]],'#50c5a6','#90e0c7',1.2);
+  const grad=ctx.createLinearGradient(0,450,0,500);grad.addColorStop(0,'#72e6c278');grad.addColorStop(1,'#38a78f12');path([[1160,449],[1318,449],[1318,505],[1160,505]],grad);
+  for(let i=0;i<6;i++){const p=fract(t*.3+i/6),x=1167+i*26,y=450+p*45;line([[x,y-9],[x,y+1]],rgba(C.teal,.25+.5*Math.sin(p*Math.PI)),2)}
+  for(let i=0;i<9;i++){const p=fract(t*.18+i/9),x=1170+p*148,y=438-(i%3)*9;particle(x,y,2.6,C.teal)}
+  for(let i=0;i<4;i++){const p=fract(t*.32+i/4);ctx.beginPath();ctx.ellipse(1235,510,p*60+5,p*10+2,0,0,Math.PI*2);ctx.strokeStyle=rgba(C.teal,(1-p)*.42);ctx.lineWidth=1.3;ctx.stroke()}
+  badge('pH 6–9',1260,371,C.teal,20);
+  stationLabel('OUTPUT · AIR BERSIH',1254,563,C.teal);
+}
+function seedling(x,y,g,t,i){ctx.save();ctx.translate(x,y);ctx.scale(Math.max(.05,g),Math.max(.05,g));const sway=Math.sin(t*.8+i)*2;line([[0,0],[sway,-37]],'#91d7a5',2.5);path([[sway,-22],[-20+sway,-37],[-17+sway,-22],[-3+sway,-16]],'#4fbd8c','#79c49a',.5);path([[sway,-29],[20+sway,-45],[18+sway,-27],[sway,-21]],'#6aca97','#a0e8b0',.5);ctx.restore()}
+function residueUnits(t,idx){
+  const focused=idx===5,good=focused?smooth((t-57)/1.9):1,bad=focused?smooth((t-62)/1.9):1;
+  const incoming=[[351,322],[306,446],[381,522],[491,586]];
+  flowingPath(incoming,C.purple,t,.11,6,true,focused?smooth((t-53)/1.7):1);
+  const yes=[[621,616],[696,616],[755,566],[851,566]],no=[[621,616],[696,616],[808,665],[1084,665]];
+  ctx.save();ctx.globalAlpha*=.2+.8*good;flowingPath(yes,C.teal,t,.17,6,true,good);ctx.restore();
+  ctx.save();ctx.globalAlpha*=.2+.8*bad;flowingPath(no,C.red,t,.16,7,true,bad);ctx.restore();
+  if(focused){text('MEDIA ORGANIK JENUH',492,501,15,C.purple,500,'center')}
+  platform(436,685,214,108);
+  iso(477,605,143,87,58,'#384258','#233444','#1d2d40','#6d7997');
+  text('UJI TCLP',548,637,18,'#d3c3f2',600,'center');
+  const vialX=536,vialY=525;
+  rounded(vialX-18,vialY,36,75,11,'#101e2ed9','#b6b0d0');
+  ctx.save();ctx.beginPath();ctx.roundRect(vialX-15,vialY+5,30,67,9);ctx.clip();ctx.fillStyle='#97785c';ctx.fillRect(vialX-15,vialY+38,30,35);for(let i=0;i<6;i++){const p=fract(t*.5+i/6);particle(vialX-9+rand(i)*19,vialY+41+p*23,1.7,C.purple,true)}ctx.restore();
+  rounded(vialX-20,vialY-5,40,11,3,'#76859b','#adb7c9');
+  line([[vialX-10,vialY+11],[vialX-10,vialY+33]],'#d6e4eb88',2);
+  for(let i=0;i<4;i++)line([[vialX+8,vialY+17+i*11],[vialX+13,vialY+17+i*11]],'#ced5e466',1);
+  const sw=focused?Math.sin((t-53)*2)*.5+.5:.5;
+  line([[584,550],[584,580],[561,580]],'#788aa0',3);circle(584,548,9,'#21334a','#bda5e3',2);circle(584,548,3,rgba(C.purple,.4+sw*.6));
+  stationLabel('03 · RESIDU & TCLP',548,725,C.purple);
+  ctx.save();ctx.globalAlpha*=.28+.72*good;
+  platform(823,611,210,110);iso(842,568,169,88,31,'#716044','#4f4836','#3c4035','#8f9169');grain(848,573,150,20,24,530);
+  for(let i=0;i<4;i++)seedling(862+i*39,564-i%2*13,focused?clamp(good*1.3-(i*.05)):.85,t,i);
+  badge('LOLOS → TOPSOIL',950,646,C.teal,16);text('Revegetasi',951,677,17,C.teal,500,'center');ctx.restore();
+  ctx.save();ctx.globalAlpha*=.28+.72*bad;
+  platform(1060,694,226,102);
+  for(let i=0;i<3;i++){
+    const x=1100+i*57,y=636-(i%2)*16;
+    ctx.beginPath();ctx.ellipse(x,y+50,22,9,0,0,Math.PI*2);ctx.fillStyle='#512f3d';ctx.fill();ctx.fillRect(x-22,y,44,50);
+    ctx.beginPath();ctx.ellipse(x,y,22,9,0,0,Math.PI*2);ctx.fillStyle='#794752';ctx.fill();ctx.strokeStyle='#ce7c83';ctx.lineWidth=1;ctx.stroke();
+    ctx.beginPath();ctx.ellipse(x,y+39,22,8,0,0,Math.PI);ctx.strokeStyle='#a75f6f';ctx.stroke();
+    line([[x-21,y+13],[x+21,y+13]],'#9c596b',1);text('B3',x,y+26,15,'#ffced0',600,'center');
+  }
+  badge('GAGAL → LIMBAH B3',1180,736,C.red,16);text('Pengolahan / stabilisasi kapur',1181,767,14,'#e4a5ab',500,'center');
+  if(focused&&t>63.4){for(let i=0;i<5;i++){const p=fract(t*.45+i/5);particle(1220+Math.sin(i)*7,605+p*28,2.5,'#d4dfd4',true)}}
+  ctx.restore();
+}
+function overviewAnnotations(t,idx){
+  if(idx===0||idx===1||idx===7){
+    text('JALUR AIR',737,277,17,'#aac4d2',500,'center');line([[652,287],[944,287]],'#436277',1,[4,7]);
+    text('JALUR RESIDU',739,780,16,'#b8a7d9',500,'center');
+    if(idx===7){const p=smooth((t-78)/2);ctx.save();ctx.globalAlpha=p;badge('TKKS SAWIT → MEDIA REAKTIF',479,21,C.teal,20);ctx.restore()}
+  }
+}
+function draw(t){
+  if(!W||!H||!ctx)return;
+  ctx.setTransform(DPR,0,0,DPR,0,0);ctx.clearRect(0,0,W,H);
+  const idx=sceneAt(t),cam=cameraAt(t,idx);
+  const margins=W<520?[.94,.77]:[.93,.85];
+  const scale=Math.min(W*margins[0]/cam[2],H*margins[1]/cam[3]);
+  ctx.save();ctx.translate(W/2,H/2+2);ctx.scale(scale,scale);ctx.translate(-cam[0],-cam[1]);ctx.lineCap='round';ctx.lineJoin='round';
+  const fade=t>85&&t<86&&playing&&$('loop').checked?1-smooth((t-85)/1):1;ctx.globalAlpha=fade;
+  ground();
+  flowingPath([[227,138],[271,150],[309,150],[350,158]],C.orange,t,.2,7);
+  flowingPath([[644,358],[672,376],[690,391],[748,391]],C.amber,t,.18,8);
+  flowingPath([[1087,403],[1116,421],[1153,442]],C.teal,t,.22,7);
+  const focusAlpha=(unit,scene)=>scene<=1||scene===7||unit===scene?1:.1;
+  const withFocus=(unit,fn)=>{ctx.save();ctx.globalAlpha*=lerp(focusAlpha(unit,Math.max(0,idx-1)),focusAlpha(unit,idx),smooth((t-scenes[idx].start)/1.3));fn();ctx.restore()};
+  withFocus(2,()=>inputUnit(t));withFocus(3,()=>reactorUnit(t,idx));withFocus(4,()=>wetlandUnit(t,idx));withFocus(6,()=>outputUnit(t,idx));withFocus(5,()=>residueUnits(t,idx));overviewAnnotations(t,idx);
+  ctx.restore();
+  // Screen-space corner brackets keep the frame visually stable during camera moves.
+  ctx.save();ctx.globalAlpha=.34;const pad=18,n=11;line([[pad,H-pad-35],[pad,H-pad-35-n]],'#55788e',1);line([[W-pad,H-pad-35],[W-pad,H-pad-35-n]],'#55788e',1);ctx.restore();
+}
+function render(t){const idx=sceneAt(t);setUI(t,idx);draw(t);renderFrame++}
+function play(){if(elapsed>=DURATION)elapsed=0;playing=true;lastTick=performance.now();updatePlay();render(elapsed)}
+function pause(){playing=false;updatePlay();render(elapsed)}
+function updatePlay(){$('play').setAttribute('aria-label',playing?'Jeda animasi':'Putar animasi');$('play').title=playing?'Jeda (Spasi)':'Putar (Spasi)';$('playIcon').innerHTML=playing?'<path d="M6 4h4v16H6zm8 0h4v16h-4z"/>':'<path d="m7 3 14 9-14 9z"/>'}
+function seek(t){elapsed=clamp(Number(t)||0,0,DURATION);lastTick=performance.now();render(elapsed)}
+function tick(now){if(!lastTick)lastTick=now;const dt=Math.min((now-lastTick)/1000,.12);lastTick=now;if(playing&&!document.hidden){elapsed+=dt;if(elapsed>=DURATION){if($('loop').checked){elapsed%=DURATION}else{elapsed=DURATION;playing=false;updatePlay()}}render(elapsed)}requestAnimationFrame(tick)}
+$('replay').addEventListener('click',()=>{seek(0);play()});
+$('play').addEventListener('click',()=>playing?pause():play());
+$('seek').addEventListener('input',e=>seek(e.target.value));
+$('notesButton').addEventListener('click',()=>{notesWasPlaying=playing;pause();$('notes').showModal()});
+$('closeNotes').addEventListener('click',()=>$('notes').close());
+$('notes').addEventListener('click',e=>{if(e.target===$('notes')){const r=$('notes').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('notes').close()}});
+$('notes').addEventListener('close',()=>{if(notesWasPlaying)play()});
+$('fullscreen').addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else if($('film').requestFullscreen)await $('film').requestFullscreen()}catch(e){$('fullscreen').textContent='Gunakan layar peramban'}});
+document.addEventListener('fullscreenchange',()=>{$('fullscreen').textContent=document.fullscreenElement?'Keluar layar penuh':'Layar penuh';resize()});
+document.addEventListener('keydown',e=>{if($('notes').open||/INPUT|BUTTON|SELECT|TEXTAREA/.test(document.activeElement.tagName))return;if(e.code==='Space'){e.preventDefault();playing?pause():play()}if(e.code==='ArrowRight'){e.preventDefault();seek(elapsed+5)}if(e.code==='ArrowLeft'){e.preventDefault();seek(elapsed-5)}});
+document.addEventListener('visibilitychange',()=>{lastTick=performance.now()});
+new ResizeObserver(resize).observe(viewport);
+// Small local API for deterministic preview, scrubbing, and offline playback checks.
+window.BIOPAS=Object.freeze({duration:DURATION,seek,play,pause,getState:()=>({time:elapsed,playing,scene:scenes[sceneAt(elapsed)].nav,frames:renderFrame})});
+resize();render(0);requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>
