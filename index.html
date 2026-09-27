@@ -27,30 +27,29 @@
   <main class="film" id="film" aria-label="Animasi penjelasan BIO-PAS Bertingkat">
     <div class="stage">
       <div class="viewport" id="viewport">
-        <canvas id="world" role="img" aria-label="Animasi isometrik: air asam tambang mengalir turun ke bioreaktor anaerob, kolam aerob, dan saluran air bersih. Media jenuh bercabang ke uji TCLP dan pengelolaan residu.">Peramban Anda perlu mendukung Canvas untuk menampilkan animasi.</canvas>
+        <canvas id="world" role="img" aria-label="Animasi isometrik: air asam tambang mengalir turun ke bioreaktor anaerob, kolam aerob, dan saluran air terolah. Media jenuh bercabang ke uji TCLP dan pengelolaan residu.">Peramban Anda perlu mendukung Canvas untuk menampilkan animasi.</canvas>
         <div class="view-label" id="viewLabel">ALIRAN GRAVITASI</div>
-        <div class="legend"><span><i style="--c:#ff9164"></i>Asam / logam tinggi</span><span><i style="--c:#f1c76b"></i>Transisi</span><span><i style="--c:#61e4c0"></i>Air bersih</span></div>
+        <div class="legend"><span><i style="--c:#ff9164"></i>Asam / logam tinggi</span><span><i style="--c:#f1c76b"></i>Transisi</span><span><i style="--c:#61e4c0"></i>Target air terolah</span></div>
       </div>
       <aside class="story" aria-label="Penjelasan adegan"><div class="story-content" id="storyContent"><div class="kicker" id="kicker"></div><h2 id="sceneTitle"></h2><p class="caption" id="caption"></p><div class="facts" id="facts"></div></div></aside>
-      <div class="opener" id="opener"><div class="opener-inner" id="openerInner"><div class="eyebrow">Dari limbah sawit, untuk pemulihan tambang</div><h1>BIO-PAS<span>Bertingkat</span></h1><p>Bioreaktor Pasif Anaerob–Aerob<br>berbasis Tandan Kosong Kelapa Sawit (TKKS)</p><div class="intro-rule"></div><div class="intro-note">SATU SISTEM · TIGA TAHAP · MENGALIR DENGAN GRAVITASI</div></div></div>
+      <div class="opener" id="opener"><div class="opener-inner" id="openerInner"><div class="eyebrow">Dari limbah sawit, untuk pemulihan tambang</div><h1>BIO-PAS<span>Bertingkat</span></h1><p>Bioreaktor Pasif Anaerob–Aerob<br>berbasis Tandan Kosong Kelapa Sawit (TKKS)</p><div class="intro-rule"></div><div class="intro-note">RANCANGAN KONSEPTUAL · BERBASIS GRAVITASI</div></div></div>
     </div>
     <div class="player">
       <div class="player-top"><button class="play" id="play" type="button" aria-label="Jeda animasi" title="Jeda / putar (Spasi)"><svg id="playIcon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h4v16H6zm8 0h4v16h-4z"/></svg></button><div class="track-wrap"><div class="progress-fill" id="progressFill"></div><input id="seek" type="range" min="0" max="86" step="0.1" value="0" aria-label="Posisi pemutaran animasi" aria-valuetext="0 dari 86 detik"></div><div class="time"><span id="timeNow">00:00</span><span class="total"> / 01:26</span></div></div>
       <nav class="chapters" id="chapters" aria-label="Lompat ke adegan"></nav>
     </div>
   </main>
-  <footer class="page-footer"><span>Visualisasi konsep · alur proses dipercepat</span><div class="footer-right"><label class="loop-label"><input type="checkbox" id="loop" checked>Ulang otomatis</label><button class="text-button" type="button" id="notesButton">Data sistem</button><button class="text-button" type="button" id="fullscreen">Layar penuh</button></div></footer>
+  <footer class="page-footer"><span>Revisi ilmiah · kinerja rangkaian belum diuji</span><div class="footer-right"><label class="loop-label"><input type="checkbox" id="loop" checked>Ulang otomatis</label><button class="text-button" type="button" id="notesButton">Data sistem</button><button class="text-button" type="button" id="fullscreen">Layar penuh</button></div></footer>
 </div>
 <dialog id="notes" class="note-dialog" aria-labelledby="notesTitle"><div class="dialog-header"><h2 id="notesTitle">Data sistem BIO-PAS</h2><button class="button close" id="closeNotes" type="button">Tutup</button></div>
-  <p>Animasi 86 detik ini mengikuti konteks rancangan BIO-PAS Bertingkat dan esai yang disertakan. Angka berikut adalah data rancangan dan target keluaran, bukan hasil pengukuran animasi.</p>
-  <h3>Input — Air Asam Tambang (AAT)</h3><p>pH 2,0–3,5, kaya sulfat, dengan Fe, Zn, Al, Cu, dan Mn terlarut.</p>
-  <h3>Tahap 1 — Bioreaktor anaerob berbasis TKKS</h3><p>Vertical-flow dengan aliran turun. Lapisan atas berupa kolom distribusi/perkolasi untuk meratakan aliran. Zona reaktif berisi 70% cacahan TKKS mentah, 20% kotoran sapi, dan 10% lumpur endapan alami. Lapisan dasar berupa drainase batugamping (limestone) untuk mencegah penyumbatan.</p><p>Menurut skema yang diberikan, Sulfate-Reducing Bacteria (SRB) mereduksi sulfat (SO₄²⁻) menjadi H₂S yang mengikat Fe, Zn, Al, Cu menjadi mineral sulfida padat, sekaligus menaikkan pH. Keluaran tahap ini memiliki pH netral, tetapi Mn masih terlarut.</p>
-  <h3>Tahap 2 — Kolam lahan basah aerob</h3><p>Kolam dangkal terbuka memperoleh aerasi alami dari atmosfer. Bakteri pengoksidasi mangan mengendapkan Mn menjadi Mangan Oksida (MnO₂). Proses berlangsung pada kondisi aerob dan pH netral, berlawanan dengan kondisi anaerob Tahap 1.</p>
-  <h3>Tahap 3 — Uji TCLP dan pengelolaan residu</h3><p>Media organik jenuh diuji dengan Toxicity Characteristic Leaching Procedure (TCLP). Jika lolos baku mutu, media dihamparkan sebagai topsoil untuk revegetasi. Jika gagal, media diarahkan ke pengolahan limbah B3 atau distabilisasi kapur. Ini adalah jalur pengelolaan residu; air terolah keluar dari kolam aerob melalui jalur air.</p>
-  <h3>Output — Target air bersih keluaran gravitasi</h3><p>pH 6–9; Fe di bawah ambang batas maksimum 7 mg/L dan Mn di bawah ambang batas maksimum 4 mg/L, sesuai parameter yang diminta dari Kepmen LH 113/2003.</p>
-  <h3>Makna visual</h3><p>Merah/oranye: AAT dengan pH rendah dan logam tinggi. Kuning: transisi. Hijau/teal: air bersih sesuai target. Titik bergerak mewakili partikel; bentuk bersudut mewakili padatan. Jalur putus-putus menunjukkan pemindahan media jenuh. Kecepatan, skala, jumlah partikel, dan gelembung bersifat ilustratif.</p>
-  <p class="source">Bahan: Essay_BIO-PAS_Bertingkat_Expanded.doc dan konteks sistem yang diberikan pengguna. Data pada pesan pengguna diutamakan apabila berbeda dengan ringkasan esai.</p>
-  <p class="source note">Catatan kimia: pengikatan logam ditampilkan mengikuti penyederhanaan rancangan. Aluminium di dalam air umumnya dipisahkan sebagai hidroksida; Al tidak membentuk endapan sulfida stabil seperti Fe, Zn, dan Cu. Kenaikan pH berkaitan dengan pembentukan alkalinitas selama reduksi sulfat, bukan reaksi pengendapan sulfida itu sendiri.</p>
+  <p>Revisi konsep untuk MSAC. BIO-PAS adalah adaptasi dan integrasi teknologi yang telah dipublikasikan. Animasi 86 detik ini menggambarkan hipotesis desain; kinerja, komposisi optimum, dan kepatuhan keluaran belum dibuktikan pada rangkaian usulan.</p>
+  <h3>Input dan pengondisian</h3><p>Skenario AAT berpH 2,0–3,5, kaya sulfat, dengan Fe, Zn, Al, Cu, dan Mn terlarut. Karakterisasi, ekualisasi, dan penahanan padatan mendahului reaktor. Pengondisian alkalinitas diperlukan bila keasaman melampaui kemampuan media. Aliran gravitasi memerlukan beda elevasi yang memadai.</p>
+  <h3>Tahap 1 — Bioreaktor anaerob berbasis TKKS</h3><p>Aliran vertikal turun melalui distribusi/perkolasi, zona reaktif jenuh air, dan drainase beragregat batugamping. Kandidat campuran: 70% cacahan TKKS, 20% kotoran sapi, dan 10% sedimen inokulum, menurut volume curah sebelum pencampuran (v/v). Kadar air dan pemadatan harus dicatat. Aktivitas SRB serta kecukupan donor karbon perlu diuji.</p><p>SRB mereduksi sulfat menjadi sulfida dan mendukung pembentukan alkalinitas. Fe(II), Zn, dan Cu dapat tertahan sebagai sulfida. Al mengikuti jalur hidroksida/hidroksisulfat, disederhanakan sebagai Al(OH)₃ pada gambar. Reaksi pengendapan sulfida dapat menghasilkan H⁺; kenaikan pH bersih ditentukan neraca keasaman dan alkalinitas. Batugamping membantu penyanggaan, tetapi penyumbatan tetap mungkin terjadi.</p>
+  <h3>Transisi dan Tahap 2 — Pengolahan aerob Mn</h3><p>Aerasi bertahap, penahanan endapan besi, dan penyangga pH bila diperlukan menyiapkan air menuju kolam dangkal berkerikil dan biofilm. pH, alkalinitas, oksigen terlarut, Fe(II), dan sulfida sisa diperiksa. Oksidasi sisa sulfida dan besi dapat menurunkan pH; penanganan gas H₂S juga perlu dirancang.</p><p>Oksidasi Mn(II), termasuk oleh mikroorganisme, dapat menghasilkan oksida Mn. Proses tergantung kondisi air, waktu kontak, dan pematangan biofilm. Jalur lain seperti pembentukan karbonat dapat berperan pada kondisi tertentu. Padatan harus tertahan sebelum keluaran. Aerob dan pH netral bukan jaminan otomatis pencapaian target.</p>
+  <h3>Tahap 3 — Pengelolaan residu bersyarat</h3><p>Media anaerob jenuh dan endapan tiap unit dikarakterisasi terpisah. TCLP menilai pelindian pada kondisi uji; lolos TCLP belum cukup untuk pemanfaatan sebagai topsoil. Evaluasi lanjutan mencakup logam total, pelindian setelah oksidasi/hujan, keasaman, respons tanaman, dan persyaratan penggunaan. Jalur hijau berlaku setelah seluruh evaluasi terpenuhi. Residu yang tidak layak dimanfaatkan dikelola terkendali, termasuk melalui jalur B3 jika klasifikasinya mengharuskan; stabilisasi kapur harus diuji ulang.</p>
+  <h3>Output — Target air terolah</h3><p>Acuan Lampiran I Kepmen LH 113/2003 untuk penambangan batubara: pH 6–9; Fe total maksimum 7 mg/L; Mn total maksimum 4 mg/L; residu tersuspensi maksimum 400 mg/L. Persyaratan yang berlaku di lokasi tetap diperiksa. Air yang belum sesuai ditahan untuk pengolahan lanjutan. Air terolah tidak berarti air minum atau bebas seluruh pencemar.</p>
+  <h3>Makna visual</h3><p>Oranye: air asam dan logam tinggi. Kuning: transisi. Teal: target air terolah. Sulfida logam berwarna ungu; endapan Al abu kebiruan. Partikel, gelembung oksigen, waktu, dan skala adalah ilustrasi, bukan simulasi kinetika. Diagram utama menyederhanakan unit pendukung yang dijelaskan pada naskah.</p>
+  <h3>Dasar ilmiah</h3><p class="source">Sekarjannah et al. (2023), DOI 10.29244/jpsl.13.2.267-276; Johnson &amp; Hallberg (2005), DOI 10.1016/j.scitotenv.2004.09.008; Hallberg &amp; Johnson (2005), DOI 10.1016/j.scitotenv.2004.09.011; Ñancucheo &amp; Johnson (2012), DOI 10.1111/j.1751-7915.2011.00285.x; McCann &amp; Nairn (2025), DOI 10.1016/j.jenvman.2025.126061; ITRC (2013), BCR-1. Penggabungan komponen dan rasio media belum membuktikan kebaruan atau keunggulan BIO-PAS.</p>
   <p class="source">Kontrol: Spasi untuk jeda/putar, panah kiri/kanan untuk mundur/maju 5 detik, atau pilih bab pada garis waktu. Seluruh gambar, gaya, dan animasi tersimpan dalam satu berkas; tidak memerlukan internet.</p>
 </dialog>
 <noscript><div class="noscript">Aktifkan JavaScript di peramban untuk memutar animasi BIO-PAS Bertingkat.</div></noscript>
@@ -63,29 +62,71 @@ const DURATION=86;
 const C={ink:'#e1edf3',muted:'#91acbe',line:'#335066',teal:'#61e4c0',amber:'#f1c76b',orange:'#ff9164',red:'#f17b85',purple:'#bca3f9'};
 const scenes=[
   {start:0,end:5,nav:'Pembuka',label:'BIO-PAS BERTINGKAT',title:'Limbah sawit untuk memulihkan air tambang.',color:C.teal,view:'BIOREAKTOR PASIF ANAEROB–AEROB',camera:[670,352,1450,760],facts:''},
-  {start:5,end:12,nav:'Alur',label:'PETA SISTEM',title:'Tiga tahap yang saling melengkapi.',color:C.teal,view:'TINJAUAN SISTEM · ALIRAN GRAVITASI',camera:[690,390,1500,835],facts:'<div class="flow-list"><div class="flow-item"><span class="step-num">01</span>Reaktor anaerob · menaikkan pH</div><div class="flow-item"><span class="step-num">02</span>Kolam aerob · mengendapkan Mn</div><div class="flow-item"><span class="step-num">03</span>Uji TCLP · menentukan arah residu</div></div><div class="divider"></div><div class="tags"><span class="tag emphasis">Air mengalir karena gravitasi</span></div>'},
-  {start:12,end:24,nav:'Input',label:'INPUT / AIR ASAM TAMBANG',title:'Air yang asam membawa logam terlarut.',color:C.orange,view:'INPUT · AAT',camera:[143,206,440,340],facts:'<div class="small-label">pH air masuk</div><div class="metric">2,0–3,5</div><div class="small-label" style="margin-bottom:10px">Kaya sulfat · logam terlarut</div><div class="tags"><span class="tag">Fe</span><span class="tag">Zn</span><span class="tag">Al</span><span class="tag">Cu</span><span class="tag" style="color:#ff9164">Mn</span></div>'},
-  {start:24,end:39,nav:'Anaerob',label:'TAHAP 01 / REAKTOR ANAEROB',title:'Tiga lapisan. Aliran vertikal ke bawah.',color:C.amber,view:'POTONGAN REAKTOR · VERTICAL-FLOW',camera:[468,236,505,470],facts:'<div class="small-label">Komposisi zona reaktif</div><div class="composition" aria-label="70 persen TKKS, 20 persen kotoran sapi, 10 persen lumpur endapan"><i></i><i></i><i></i></div><div class="mix-row"><span>Cacahan TKKS mentah</span><strong>70%</strong></div><div class="mix-row"><span>Kotoran sapi</span><strong>20%</strong></div><div class="mix-row"><span>Lumpur endapan alami</span><strong>10%</strong></div><div class="reaction">SO₄²⁻ <small>— SRB →</small> H₂S</div><div class="reference">Sulfate-Reducing Bacteria · zona tanpa oksigen</div>'},
-  {start:39,end:53,nav:'Aerob',label:'TAHAP 02 / AEROBIC POLISHING',title:'Mangan membutuhkan kondisi yang berbeda.',color:C.teal,view:'KOLAM DANGKAL TERBUKA · AEROB',camera:[875,348,555,365],facts:'<div class="condition"><div><span class="small-label">Lingkungan</span><strong>Aerob</strong></div><div><span class="small-label">pH masuk</span><strong>Netral</strong></div></div><div class="reaction" style="color:var(--teal)"><span style="color:#ff9164">Mn</span> → MnO₂ <small>↓ padatan</small></div><div class="reference">Bakteri pengoksidasi mangan<br>Oksigen diperoleh dari atmosfer</div>'},
-  {start:53,end:67,nav:'TCLP',label:'TAHAP 03 / PENGELOLAAN RESIDU',title:'Media jenuh diuji sebelum dimanfaatkan.',color:C.purple,view:'JALUR RESIDU · UJI TCLP',camera:[831,609,960,425],facts:'<div class="small-label">Toxicity Characteristic Leaching Procedure</div><div class="branch"><div class="branch-symbol" style="color:#61e4c0">✓</div><div><strong style="color:#61e4c0">Lolos → Topsoil</strong><span>Dihamparkan untuk revegetasi</span></div></div><div class="branch"><div class="branch-symbol" style="color:#f17b85">×</div><div><strong style="color:#f17b85">Gagal → Limbah B3</strong><span>Pengolahan B3 / stabilisasi kapur</span></div></div>'},
-  {start:67,end:76,nav:'Output',label:'OUTPUT / TARGET KUALITAS AIR',title:'Air bersih keluar secara gravitasi.',color:C.teal,view:'KELUARAN · TARGET BAKU MUTU',camera:[1224,440,435,295],facts:'<div class="quality"><div class="big"><div class="small-label">pH keluaran</div><strong>6–9</strong></div><div><span class="small-label">Fe · batas maks.</span><strong>7 <small>mg/L</small></strong></div><div><span class="small-label">Mn · batas maks.</span><strong>4 <small>mg/L</small></strong></div></div><div class="reference">Target Fe dan Mn di bawah ambang batas<br>Kepmen LH 113/2003</div>'},
-  {start:76,end:86,nav:'Sirkular',label:'EKONOMI SIRKULAR',title:'TKKS sawit menjadi bagian dari pemulihan tambang.',color:C.teal,view:'BIO-PAS BERTINGKAT · SIKLUS PEMANFAATAN',camera:[690,390,1500,835],facts:'<div class="flow-list"><div class="flow-item"><span class="step-num">↗</span>TKKS → media reaktif</div><div class="flow-item"><span class="step-num">↗</span>AAT → air terolah</div><div class="flow-item"><span class="step-num">↗</span>Residu lolos TCLP → revegetasi</div></div><div class="divider"></div><div class="tags"><span class="tag emphasis">Limbah menjadi sumber daya</span></div>'}
+  {start:5,end:12,nav:'Alur',label:'PETA SISTEM',title:'Aliran air dan residu ditangani bersama.',color:C.teal,view:'TINJAUAN SISTEM · ALIRAN GRAVITASI',camera:[690,390,1500,835],facts:'<div class="flow-list"><div class="flow-item"><span class="step-num">01</span>Reaktor anaerob · sulfida dan alkalinitas</div><div class="flow-item"><span class="step-num">02</span>Transisi dan aerob · penyisihan Mn</div><div class="flow-item"><span class="step-num">03</span>Residu · TCLP dan evaluasi lanjutan</div></div><div class="divider"></div><div class="tags"><span class="tag emphasis">Gravitasi sesuai beda elevasi</span></div>'},
+  {start:12,end:24,nav:'Input',label:'INPUT / AIR ASAM TAMBANG',title:'Air yang asam membawa logam terlarut.',color:C.orange,view:'INPUT · AAT',camera:[143,206,440,340],facts:'<div class="small-label">Skenario pH air masuk</div><div class="metric">2,0–3,5</div><div class="small-label" style="margin-bottom:10px">Kaya sulfat · logam terlarut</div><div class="tags"><span class="tag">Fe</span><span class="tag">Zn</span><span class="tag">Al</span><span class="tag">Cu</span><span class="tag" style="color:#ff9164">Mn</span></div>'},
+  {start:24,end:39,nav:'Anaerob',label:'TAHAP 01 / REAKTOR ANAEROB',title:'Tiga lapisan. Aliran vertikal ke bawah.',color:C.amber,view:'POTONGAN REAKTOR · VERTICAL-FLOW',camera:[468,236,505,470],facts:'<div class="small-label">Kandidat media · volume curah (v/v)</div><div class="composition" aria-label="70 persen TKKS, 20 persen kotoran sapi, 10 persen lumpur endapan"><i></i><i></i><i></i></div><div class="mix-row"><span>Cacahan TKKS mentah</span><strong>70%</strong></div><div class="mix-row"><span>Kotoran sapi</span><strong>20%</strong></div><div class="mix-row"><span>Sedimen inokulum</span><strong>10%</strong></div><div class="reaction">SO₄²⁻ <small>— SRB →</small> H₂S</div><div class="reference">Alkalinitas terbentuk · rasio belum optimum</div>'},
+  {start:39,end:53,nav:'Aerob',label:'TAHAP 02 / AEROBIC POLISHING',title:'Siapkan kondisi air untuk penyisihan Mn.',color:C.teal,view:'KOLAM DANGKAL TERBUKA · AEROB',camera:[875,348,555,365],facts:'<div class="condition"><div><span class="small-label">Lingkungan</span><strong>Aerob</strong></div><div><span class="small-label">pH &amp; DO</span><strong>Perlu dicek</strong></div></div><div class="reaction" style="color:var(--teal)"><span style="color:#ff9164">Mn</span> → MnO₂ <small>↓ padatan</small></div><div class="reference">Oksidasi biologis dan reaksi pada media<br>Dipengaruhi pH, oksigen, dan waktu kontak</div>'},
+  {start:53,end:67,nav:'TCLP',label:'TAHAP 03 / PENGELOLAAN RESIDU',title:'Media jenuh diuji sebelum dimanfaatkan.',color:C.purple,view:'JALUR RESIDU · UJI TCLP',camera:[831,609,960,425],facts:'<div class="small-label">TCLP + evaluasi kelayakan penggunaan</div><div class="branch"><div class="branch-symbol" style="color:#61e4c0">✓</div><div><strong style="color:#61e4c0">Layak → Pemanfaatan</strong><span>Setelah uji lanjutan dan syarat terpenuhi</span></div></div><div class="branch"><div class="branch-symbol" style="color:#f17b85">×</div><div><strong style="color:#f17b85">Tidak layak → Dikelola</strong><span>Jalur sesuai klasifikasi; stabilisasi diuji</span></div></div>'},
+  {start:67,end:76,nav:'Output',label:'OUTPUT / TARGET KUALITAS AIR',title:'Air terolah diperiksa sebelum dilepas.',color:C.teal,view:'KELUARAN · TARGET BAKU MUTU',camera:[1224,440,435,295],facts:'<div class="quality"><div class="big"><div class="small-label">pH keluaran</div><strong>6–9</strong></div><div><span class="small-label">Fe total · maks.</span><strong>7 <small>mg/L</small></strong></div><div><span class="small-label">Mn total · maks.</span><strong>4 <small>mg/L</small></strong></div></div><div class="reference">Target, bukan hasil uji · TSS ≤ 400 mg/L<br>Acuan Lampiran I Kepmen LH 113/2003</div>'},
+  {start:76,end:86,nav:'Sirkular',label:'EKONOMI SIRKULAR',title:'TKKS sawit menjadi bagian dari pemulihan tambang.',color:C.teal,view:'BIO-PAS BERTINGKAT · SIKLUS PEMANFAATAN',camera:[690,390,1500,835],facts:'<div class="flow-list"><div class="flow-item"><span class="step-num">↗</span>TKKS → media reaktif</div><div class="flow-item"><span class="step-num">↗</span>AAT → air terolah</div><div class="flow-item"><span class="step-num">↗</span>Residu → pemanfaatan jika terbukti layak</div></div><div class="divider"></div><div class="tags"><span class="tag emphasis">Manfaat perlu bukti kinerja dan biaya</span></div>'}
 ];
 const captions=[
- [0,'Bioreaktor Pasif Anaerob–Aerob berbasis Tandan Kosong Kelapa Sawit.'],
- [5,'Air mengalir melalui reaktor anaerob lalu kolam aerob. Media organik jenuh dipisahkan menuju uji TCLP dan pengelolaan residu.'],
- [12,'Air Asam Tambang (AAT) masuk pada pH 2,0–3,5. Warna merah-oranye menandai air yang asam dengan logam tinggi.'],
- [17.5,'AAT kaya sulfat dan mengandung Fe, Zn, Al, Cu, serta Mn terlarut. Aliran gravitasi membawanya menuju reaktor pertama.'],
- [24,'Kolom distribusi/perkolasi meratakan air di atas matriks reaktif. Di dasar reaktor, drainase batugamping mencegah penyumbatan.'],
- [29,'SRB mereduksi sulfat menjadi H₂S. Dalam skema ini, H₂S mengikat Fe, Zn, Al, Cu menjadi mineral sulfida padat, sementara pH naik.'],
- [35,'Air turun melewati drainase batugamping. Keluaran Tahap 1 sudah berpH netral, tetapi mangan (Mn) masih terlarut.'],
- [39,'Air memasuki kolam dangkal terbuka. Aerasi alami dari atmosfer membentuk kondisi aerob—kebalikan dari reaktor pertama.'],
- [45,'Pada kondisi aerob dan pH netral, bakteri pengoksidasi mangan mengubah Mn menjadi padatan MnO₂. Partikel turun dan mengendap di dasar kolam.'],
- [53,'Media organik yang sudah jenuh dipindahkan ke uji TCLP. Hasil uji menentukan tujuan pengelolaan residu.'],
- [57,'Jika LOLOS baku mutu, media dihamparkan sebagai topsoil untuk revegetasi. Jalur hijau menunjukkan pemanfaatan kembali yang bersyarat.'],
- [62,'Jika GAGAL, residu diarahkan ke pengolahan limbah B3 atau distabilisasi kapur. Kedua jalur dipilih berdasarkan hasil uji TCLP.'],
- [67,'Air bersih mengalir keluar dengan target pH 6–9. Fe dan Mn ditargetkan berada di bawah ambang batas yang tercantum.'],
- [76,'TKKS sawit dimanfaatkan untuk membantu menyelesaikan limbah tambang. Pemulihan air dan pengelolaan residu membentuk satu rangkaian ekonomi sirkular.']
+ [
+  0,
+  "Rancangan integrasi Bioreaktor Pasif Anaerob–Aerob berbasis TKKS. Kinerja keseluruhannya masih perlu diuji."
+ ],
+ [
+  5,
+  "Jalur air menghubungkan pengondisian, reaktor anaerob, dan kolam aerob. Media jenuh serta endapan mengikuti jalur pengelolaan residu."
+ ],
+ [
+  12,
+  "Skenario AAT masuk berpH 2,0–3,5. Ekualisasi, penahanan padatan, dan pengondisian bila perlu menyiapkan umpan reaktor."
+ ],
+ [
+  17.5,
+  "AAT membawa sulfat serta Fe, Zn, Al, Cu, dan Mn. Debit dan beban keasaman harus diukur sebelum menetapkan ukuran unit."
+ ],
+ [
+  24,
+  "Distribusi meratakan aliran turun pada media jenuh air. Batugamping membantu drainase dan penyanggaan; endapan tetap bisa menyumbat."
+ ],
+ [
+  29,
+  "SRB menghasilkan sulfida dan alkalinitas. Fe(II), Zn, Cu dapat menjadi sulfida; Al mengikuti jalur hidroksida atau hidroksisulfat."
+ ],
+ [
+  35,
+  "Mn masih dapat terlarut. pH, alkalinitas, sulfida sisa, dan besi diperiksa sebelum air masuk ke proses aerob."
+ ],
+ [
+  39,
+  "Zona transisi menyiapkan air melalui aerasi bertahap dan penahanan endapan. Oksidasi sulfida dan besi dapat menurunkan pH kembali."
+ ],
+ [
+  45,
+  "Di kolam aerob, oksidasi Mn dapat membentuk padatan oksida yang ditahan. pH, oksigen, waktu kontak, dan biofilm menentukan kinerjanya."
+ ],
+ [
+  53,
+  "Residu tiap unit diuji terpisah. TCLP menilai pelindian; lolos TCLP saja belum membuktikan bahan aman sebagai topsoil."
+ ],
+ [
+  57,
+  "Pemanfaatan hanya dipertimbangkan setelah uji lanjutan: logam total, pelindian setelah oksidasi, respons tanaman, dan syarat penggunaan."
+ ],
+ [
+  62,
+  "Residu yang tidak layak dimanfaatkan tetap dikelola terkendali. Jalur B3 mengikuti klasifikasi; stabilisasi kapur memerlukan pengujian ulang."
+ ],
+ [
+  67,
+  "Target keluaran: pH 6–9, Fe total ≤ 7 mg/L, Mn total ≤ 4 mg/L. Air yang belum sesuai ditahan untuk pengolahan lanjutan."
+ ],
+ [
+  76,
+  "TKKS menjadi masukan pengolahan air tambang. Manfaat sirkular perlu dibuktikan dari mutu air, keamanan residu, dan biaya siklus hidup."
+ ]
 ];
 let elapsed=0,playing=true,lastTick=0,activeScene=-1,activeCaption=-1,W=0,H=0,DPR=1,notesWasPlaying=false,renderFrame=0;
 const clamp=(v,a=0,b=1)=>Math.min(b,Math.max(a,v));
@@ -161,13 +202,13 @@ function reactorUnit(t,idx){
   const react=idx===3?smooth((t-28.4)/1.25):1;
   for(let i=0;i<8;i++){
     const p=fract((t-29)*.175+i*.133),x=375+(i%4)*51+Math.sin(i*2)*3;
-    const y=yMid+16+p*87,col=react<.2?C.orange:(p<.51?C.orange:C.purple);
+    const isAl=i%4===3; const solidColor=isAl?'#b6d4e2':C.purple; const y=yMid+16+p*87,col=react<.2?C.orange:(p<.51?C.orange:solidColor);
     particle(x,y,p<.51?4.5:5,col,p>=.51&&react>.2);
-    if(p<.6&&react>.01){const approach=smooth(p/.51),sx=x+(i%2?26:-26)*(1-approach),sy=y+15*(1-approach);ctx.save();ctx.globalAlpha=react;particle(sx,sy,3.5,C.purple);if(i%3===0&&p<.38)text('H₂S',sx,sy+13,10,C.purple,500,'center');ctx.restore()}
-    if(p>.47&&p<.63&&react>.2){circle(x,y,7+(p-.47)*55,null,rgba(C.purple,(1-(p-.47)/.16)*.8),1.5)}
-    if(i<4&&p<.35)text(['Fe','Zn','Cu','Al'][i],x,y-10,11,'#ffdfb3',500,'center');
+    if(!isAl&&p<.6&&react>.01){const approach=smooth(p/.51),sx=x+(i%2?26:-26)*(1-approach),sy=y+15*(1-approach);ctx.save();ctx.globalAlpha=react;particle(sx,sy,3.5,C.purple);if(i%3===0&&p<.38)text('H₂S',sx,sy+13,10,C.purple,500,'center');ctx.restore()}
+    if(p>.47&&p<.63&&react>.2){circle(x,y,7+(p-.47)*55,null,rgba(solidColor,(1-(p-.47)/.16)*.8),1.5)}
+    if(i<4&&p<.35)text(['Fe²⁺','Zn','Cu','Al'][i],x,y-10,11,'#ffdfb3',500,'center'); if(isAl&&p>.6&&stage&&react>.5)text('Al(OH)₃',x,y-11,10,'#d3e5ef',500,'center');
   }
-  for(let i=0;i<14;i++)particle(363+i*14.7,yMid+110+Math.sin(i)*2,2.7,'#aa99ce',true);
+  for(let i=0;i<14;i++)particle(363+i*14.7,yMid+110+Math.sin(i)*2,2.7,i%4===3?'#b6d4e2':'#aa99ce',true);
   iso(350,yTop,230,110,52,'#355264','#254655','#1c3445','#789aaa');
   path([[359,yTop-1],[420,yTop-38],[640,yTop-38],[579,yTop-1]],'#b18a544a','#cda97977',1);
   const manifold=[[381,yTop-14],[591,yTop-14]];line(manifold,'#9fb1b1',6);for(let i=0;i<6;i++){const x=387+i*35;line([[x,yTop-14],[x,yTop+3]],'#899fa5',4);const p=fract(t*.7+i/6);particle(x,yTop+6+p*29,2.3,colorMix(C.orange,C.amber,p))}
@@ -177,7 +218,7 @@ function reactorUnit(t,idx){
   for(let i=0;i<4;i++){const p=fract(t*.22+i*.25),y=lerp(yTop+56,yBase+50,p);particle(569,y,3.8,C.orange);if(i===0&&stage)text('Mn',553,y-8,12,C.orange,600,'center')}
   line([[580,yBase+38],[643,yBase+1]],'#b5a36b',9);circle(644,yBase,5,C.amber);
   if(stage){line([[325,yTop+12],[325,yBase+48]],'#d6bd7166',1.5,[3,5]);for(let i=0;i<3;i++){const p=fract(t*.27+i/3),y=lerp(yTop+14,yBase+39,p);path([[321,y-3],[329,y-3],[325,y+5]],C.amber)}
-    if(t>=35){badge('pH netral · Mn masih terlarut',501,470,C.amber,14)}else badge(ex>.2?'LAPISAN TERPISAH':'ANAEROB · TANPA O₂',494,72,C.amber,15);
+    if(t>=35){badge('Alkalinitas naik · Mn perlu diolah',501,470,C.amber,14)}else badge(ex>.2?'LAPISAN TERPISAH':'ANAEROB · TANPA O₂',494,72,C.amber,15);
   }
   if(!stage)stationLabel('01 · ANAEROB',493,472,C.amber);
 }
@@ -217,8 +258,8 @@ function outputUnit(t,idx){
   for(let i=0;i<6;i++){const p=fract(t*.3+i/6),x=1167+i*26,y=450+p*45;line([[x,y-9],[x,y+1]],rgba(C.teal,.25+.5*Math.sin(p*Math.PI)),2)}
   for(let i=0;i<9;i++){const p=fract(t*.18+i/9),x=1170+p*148,y=438-(i%3)*9;particle(x,y,2.6,C.teal)}
   for(let i=0;i<4;i++){const p=fract(t*.32+i/4);ctx.beginPath();ctx.ellipse(1235,510,p*60+5,p*10+2,0,0,Math.PI*2);ctx.strokeStyle=rgba(C.teal,(1-p)*.42);ctx.lineWidth=1.3;ctx.stroke()}
-  badge('pH 6–9',1260,371,C.teal,20);
-  stationLabel('OUTPUT · AIR BERSIH',1254,563,C.teal);
+  badge('TARGET pH 6–9',1260,371,C.teal,20);
+  stationLabel('OUTPUT · AIR TEROLAH',1254,563,C.teal);
 }
 function seedling(x,y,g,t,i){ctx.save();ctx.translate(x,y);ctx.scale(Math.max(.05,g),Math.max(.05,g));const sway=Math.sin(t*.8+i)*2;line([[0,0],[sway,-37]],'#91d7a5',2.5);path([[sway,-22],[-20+sway,-37],[-17+sway,-22],[-3+sway,-16]],'#4fbd8c','#79c49a',.5);path([[sway,-29],[20+sway,-45],[18+sway,-27],[sway,-21]],'#6aca97','#a0e8b0',.5);ctx.restore()}
 function residueUnits(t,idx){
@@ -231,7 +272,7 @@ function residueUnits(t,idx){
   if(focused){text('MEDIA ORGANIK JENUH',492,501,15,C.purple,500,'center')}
   platform(436,685,214,108);
   iso(477,605,143,87,58,'#384258','#233444','#1d2d40','#6d7997');
-  text('UJI TCLP',548,637,18,'#d3c3f2',600,'center');
+  text('TCLP + UJI LANJUT',548,637,12,'#d3c3f2',600,'center');
   const vialX=536,vialY=525;
   rounded(vialX-18,vialY,36,75,11,'#101e2ed9','#b6b0d0');
   ctx.save();ctx.beginPath();ctx.roundRect(vialX-15,vialY+5,30,67,9);ctx.clip();ctx.fillStyle='#97785c';ctx.fillRect(vialX-15,vialY+38,30,35);for(let i=0;i<6;i++){const p=fract(t*.5+i/6);particle(vialX-9+rand(i)*19,vialY+41+p*23,1.7,C.purple,true)}ctx.restore();
@@ -244,7 +285,7 @@ function residueUnits(t,idx){
   ctx.save();ctx.globalAlpha*=.28+.72*good;
   platform(823,611,210,110);iso(842,568,169,88,31,'#716044','#4f4836','#3c4035','#8f9169');grain(848,573,150,20,24,530);
   for(let i=0;i<4;i++)seedling(862+i*39,564-i%2*13,focused?clamp(good*1.3-(i*.05)):.85,t,i);
-  badge('LOLOS → TOPSOIL',950,646,C.teal,16);text('Revegetasi',951,677,17,C.teal,500,'center');ctx.restore();
+  badge('LAYAK → PEMANFAATAN',950,646,C.teal,16);text('Seluruh evaluasi terpenuhi',951,677,14,C.teal,500,'center');ctx.restore();
   ctx.save();ctx.globalAlpha*=.28+.72*bad;
   platform(1060,694,226,102);
   for(let i=0;i<3;i++){
@@ -252,9 +293,9 @@ function residueUnits(t,idx){
     ctx.beginPath();ctx.ellipse(x,y+50,22,9,0,0,Math.PI*2);ctx.fillStyle='#512f3d';ctx.fill();ctx.fillRect(x-22,y,44,50);
     ctx.beginPath();ctx.ellipse(x,y,22,9,0,0,Math.PI*2);ctx.fillStyle='#794752';ctx.fill();ctx.strokeStyle='#ce7c83';ctx.lineWidth=1;ctx.stroke();
     ctx.beginPath();ctx.ellipse(x,y+39,22,8,0,0,Math.PI);ctx.strokeStyle='#a75f6f';ctx.stroke();
-    line([[x-21,y+13],[x+21,y+13]],'#9c596b',1);text('B3',x,y+26,15,'#ffced0',600,'center');
+    line([[x-21,y+13],[x+21,y+13]],'#9c596b',1);text('RESIDU',x,y+26,9,'#ffced0',600,'center');
   }
-  badge('GAGAL → LIMBAH B3',1180,736,C.red,16);text('Pengolahan / stabilisasi kapur',1181,767,14,'#e4a5ab',500,'center');
+  badge('TIDAK LAYAK → DIKELOLA',1180,736,C.red,16);text('Sesuai klasifikasi · stabilisasi diuji',1181,767,14,'#e4a5ab',500,'center');
   if(focused&&t>63.4){for(let i=0;i<5;i++){const p=fract(t*.45+i/5);particle(1220+Math.sin(i)*7,605+p*28,2.5,'#d4dfd4',true)}}
   ctx.restore();
 }
@@ -277,6 +318,7 @@ function draw(t){
   flowingPath([[227,138],[271,150],[309,150],[350,158]],C.orange,t,.2,7);
   flowingPath([[644,358],[672,376],[690,391],[748,391]],C.amber,t,.18,8);
   flowingPath([[1087,403],[1116,421],[1153,442]],C.teal,t,.22,7);
+  if(idx<=1||idx===4||idx===7){iso(666,371,57,28,25,'#658979','#36584e','#27453f','#88a99b'); if(idx===4){text('TRANSISI',694,427,11,C.amber,600,'center'); for(let i=0;i<3;i++){const q=fract(t*.36+i/3);circle(674+i*15,358-q*20,2.8,null,rgba('#a8e9eb',1-q),1);}}}
   const focusAlpha=(unit,scene)=>scene<=1||scene===7||unit===scene?1:.1;
   const withFocus=(unit,fn)=>{ctx.save();ctx.globalAlpha*=lerp(focusAlpha(unit,Math.max(0,idx-1)),focusAlpha(unit,idx),smooth((t-scenes[idx].start)/1.3));fn();ctx.restore()};
   withFocus(2,()=>inputUnit(t));withFocus(3,()=>reactorUnit(t,idx));withFocus(4,()=>wetlandUnit(t,idx));withFocus(6,()=>outputUnit(t,idx));withFocus(5,()=>residueUnits(t,idx));overviewAnnotations(t,idx);
